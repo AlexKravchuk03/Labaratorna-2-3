@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Labaratorna_3
 {
-    class DisciplineFactory
-    {
-    }
+    public abstract class DisciplineFactory
+{
+    public abstract Discipline CreateDiscipline();
+}
 }
