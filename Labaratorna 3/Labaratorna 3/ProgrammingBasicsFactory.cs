@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Labaratorna_3
 {
-    class ProgrammingBasicsFactory
+    public class ProgrammingBasicsFactory : DisciplineFactory
+{
+    public override Discipline CreateDiscipline()
     {
+        return new Discipline("Основи програмування", 1, 1, true);
     }
+}
 }
