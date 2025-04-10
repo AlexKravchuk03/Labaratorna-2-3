@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Labaratorna_3
 {
-    class OOPFactory
+   public class OOPFactory : DisciplineFactory
+{
+    public override Discipline CreateDiscipline()
     {
+        return new Discipline("ООП", 1, 2);
     }
+}
 }
